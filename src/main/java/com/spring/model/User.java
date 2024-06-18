@@ -1,4 +1,4 @@
-package com.spring;
+package com.spring.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

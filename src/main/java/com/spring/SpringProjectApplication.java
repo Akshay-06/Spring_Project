@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import com.spring.model.Alien;
+
 @SpringBootApplication
 public class SpringProjectApplication {
 
@@ -12,7 +14,7 @@ public class SpringProjectApplication {
 		
 		
 		// Usually we create the object by saying new Class() and we need to maintain that class
-		// But in Spring, we inject the object of that class,  this concept is known as Dependency Injection
+		// But in Spring, we inject the object of that class,  this concept is known as Dependency Injection or Inverse of Control
 		Alien alien = context.getBean(Alien.class);
 		alien.code();
 	}
