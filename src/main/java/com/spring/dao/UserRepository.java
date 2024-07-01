@@ -1,4 +1,4 @@
-package com.spring;
+package com.spring.dao;
 
 import org.springframework.data.repository.CrudRepository;
 

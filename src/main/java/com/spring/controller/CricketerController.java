@@ -1,4 +1,4 @@
-package com.spring;
+package com.spring.controller;
 
 import java.util.List;
 
@@ -23,6 +23,7 @@ public class CricketerController {
 	@GetMapping("cricketers")
 	@ResponseBody
 	public List<Cricketers> getCricketers(){
+		int a=10/0;
 		return (List<Cricketers>) repo.findAll();
 	}
 	
@@ -37,7 +38,6 @@ public class CricketerController {
 	@PostMapping(path="cricketer",consumes = {MediaType.APPLICATION_XML_VALUE})
 	public Cricketers addCricketer(@RequestBody Cricketers cricketer){
 		
-		System.out.println(cricketer);
 		repo.save(cricketer);
 		return cricketer;
 		
